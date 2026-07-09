@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: demo
-      url: '/'
+      url: 'https://arefosky.tr'
     steps:
       - name: Checkout
         uses: actions/checkout@v3

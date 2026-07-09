@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: demo
-      url: ${{ steps.deploy_to_pages.outputs.github_pages_url }}
+      url: '/'
     steps:
       - name: Checkout
         uses: actions/checkout@v3

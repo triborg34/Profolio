@@ -1,0 +1,1264 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aref Mousavi | Multidisciplinary Technology Engineer Portfolio</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Professional portfolio of Aref Mousavi, a Multidisciplinary Technology Engineer specializing in Flutter, Python, C#, Unity Game Development, Computer Vision, YOLO, CCTV Surveillance, and Embedded Systems." />
+    <meta name="keywords" content="Aref Mousavi, Portfolio, Flutter Developer, Unity Game Developer, C# Developer, Python Developer, Computer Vision Engineer, YOLO Specialist, CCTV Installer, Passive Network, Raspberry Pi Developer, Embedded Systems" />
+    <meta name="author" content="Aref Mousavi" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="bg-[#040814] text-gray-300 font-sans overflow-x-hidden antialiased">
+    
+    <!-- Background Glow Elements -->
+    <div class="glow-bg glow-primary"></div>
+    <div class="glow-bg glow-secondary"></div>
+    
+    <!-- Mouse Glow Spotlight -->
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <!-- Header / Navigation Bar -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-[#ffffff08] transition-all duration-300" id="main-header">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-2 group" id="nav-logo">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-[#00f2fe] to-[#4facfe] flex items-center justify-center text-black font-bold text-lg shadow-[0_0_15px_rgba(0,242,254,0.3)] transition-transform duration-300 group-hover:scale-105">
+            AM
+          </div>
+          <div class="flex flex-col">
+            <span class="text-white font-display font-bold tracking-tight leading-none text-base">Aref Mousavi</span>
+            <span class="text-[10px] text-[#00f2fe] tracking-widest uppercase mt-0.5 font-mono">Tech Engineer</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex items-center gap-8" id="desktop-nav">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Timeline</a>
+          <a href="#certifications" class="nav-link">Certificates</a>
+          <a href="#contact" class="nav-link-btn">Hire Me</a>
+        </nav>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="md:hidden text-white hover:text-[#00f2fe] transition-colors focus:outline-none z-50" id="mobile-menu-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Side Drawer Navigation -->
+    <div class="fixed inset-0 bg-[#040814f0] backdrop-blur-lg z-40 flex flex-col justify-center items-center gap-8 md:hidden transition-all duration-500 transform translate-x-full" id="mobile-drawer">
+      <nav class="flex flex-col items-center gap-6 text-xl font-display">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#experience" class="mobile-nav-link">Timeline</a>
+        <a href="#certifications" class="mobile-nav-link">Certificates</a>
+        <a href="#contact" class="mobile-nav-btn">Hire Me</a>
+      </nav>
+    </div>
+
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+      <!-- Particle Background Canvas -->
+      <canvas id="hero-particles" class="absolute inset-0 pointer-events-none z-0"></canvas>
+      
+      <!-- Subtle Ambient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#040814] via-[#04081433] to-[#04081499] z-10"></div>
+
+      <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-20">
+        <!-- Text Content -->
+        <div class="lg:col-span-7 flex flex-col justify-center space-y-6 text-center lg:text-left reveal-fade-left">
+          <div class="inline-flex items-center gap-2 self-center lg:self-start px-3.5 py-1.5 rounded-full bg-[#00f2fe0f] border border-[#00f2fe33] text-[#00f2fe] font-mono text-xs uppercase tracking-widest mb-2 shadow-[0_0_15px_rgba(0,242,254,0.1)]">
+            <span class="flex h-2 w-2 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00f2fe] opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-[#00f2fe]"></span>
+            </span>
+            Available for New Projects
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-white tracking-tight leading-none">
+            Hi, I am <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#00f2fe] to-[#4facfe]">Aref Mousavi</span>
+          </h1>
+
+          <!-- Animated Typing Container -->
+          <div class="h-10 sm:h-12 flex items-center justify-center lg:justify-start gap-2">
+            <span class="text-gray-400 font-mono text-lg sm:text-xl md:text-2xl">I build and design</span>
+            <span class="text-white font-mono text-lg sm:text-xl md:text-2xl font-semibold border-r-2 border-[#00f2fe] pr-1 typing-cursor" id="typing-text"></span>
+          </div>
+
+          <p class="text-gray-400 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-sans">
+            A multidisciplinary technology engineer bridging the gap between Software AI Systems, Computer Vision, Smart Infrastructure, and Industrial Control Systems.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+            <a href="#projects" class="btn btn-primary group">
+              View Projects
+              <i class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1 ml-2"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Contact Me
+              <i class="fa-solid fa-envelope ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Animated Graphical Profile -->
+        <div class="lg:col-span-5 flex justify-center items-center reveal-fade-right">
+          <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 flex items-center justify-center">
+            <!-- Glowing Orbit Rings -->
+            <div class="absolute inset-0 rounded-full border border-[#00f2fe10] animate-[spin_20s_linear_infinite]"></div>
+            <div class="absolute inset-4 rounded-full border border-dashed border-[#4facfe15] animate-[spin_15s_linear_infinite_reverse]"></div>
+            <div class="absolute inset-8 rounded-full border border-[#00f2fe20] animate-[spin_10s_linear_infinite]"></div>
+            
+            <!-- Outer Scanner Line -->
+            <div class="absolute top-0 left-0 w-full h-1/2 border-b-2 border-[#00f2fe] opacity-30 shadow-[0_0_15px_rgba(0,242,254,0.5)] animate-scan"></div>
+
+            <!-- Profile Frame -->
+            <div class="relative w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-[#00f2fe40] p-2 bg-[#04081480] backdrop-blur-md shadow-[0_0_40px_rgba(0,242,254,0.15)] group">
+              <!-- Holographic Grid Overlay -->
+              <div class="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none z-10"></div>
+              
+              <!-- Actual Profile Image placeholder -->
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Aref Mousavi" class="w-full h-full object-cover rounded-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105 z-0" referrerPolicy="no-referrer" />
+              
+              <!-- Digital Scanning Indicator -->
+              <div class="absolute inset-0 bg-gradient-to-t from-[#00f2fe15] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
+                <span class="text-[#00f2fe] text-xs font-mono uppercase tracking-widest bg-[#040814a6] px-2.5 py-1 rounded-md border border-[#00f2fe50] shadow-md">ENGINEER ACTIVE</span>
+              </div>
+            </div>
+
+            <!-- Side Nodes/Badges -->
+            <div class="absolute -top-2 left-6 bg-[#040814c0] backdrop-blur-md px-3 py-1 rounded-md border border-[#00f2fe22] flex items-center gap-2 shadow-lg animate-float-slow">
+              <i class="fa-solid fa-brain text-[#00f2fe] text-xs"></i>
+              <span class="text-white text-[10px] font-mono uppercase tracking-wider">AI Systems</span>
+            </div>
+            
+            <div class="absolute bottom-6 -left-4 bg-[#040814c0] backdrop-blur-md px-3 py-1 rounded-md border border-[#4facfe22] flex items-center gap-2 shadow-lg animate-float-delayed">
+              <i class="fa-solid fa-video text-[#4facfe] text-xs"></i>
+              <span class="text-white text-[10px] font-mono uppercase tracking-wider">CCTV Expert</span>
+            </div>
+
+            <div class="absolute top-1/3 -right-6 bg-[#040814c0] backdrop-blur-md px-3 py-1 rounded-md border border-[#00f2fe22] flex items-center gap-2 shadow-lg animate-float">
+              <i class="fa-solid fa-microchip text-[#00f2fe] text-xs"></i>
+              <span class="text-white text-[10px] font-mono uppercase tracking-wider">IoT & Hardware</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="py-24 relative overflow-hidden bg-[#04081440]">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal-fade-up">
+          <span class="text-[#00f2fe] font-mono text-xs uppercase tracking-widest">Engineering Mindset</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mt-2">About Me</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-[#00f2fe] to-[#4facfe] mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Text Content -->
+          <div class="lg:col-span-7 space-y-6 reveal-fade-left">
+            <h3 class="text-2xl font-display font-semibold text-white">
+              Bridging Cybernetic Software & Physical Infrastructure
+            </h3>
+            <p class="text-gray-400 leading-relaxed font-sans">
+              I am a multidisciplinary technology engineer passionate about designing and implementing high-efficiency systems where intelligent software meets physical infrastructure. My background enables me to build end-to-end solutions that span from intelligent edge computing to cloud dashboards, security cameras, robust networking, and solid industrial electrical cabinets.
+            </p>
+            <p class="text-gray-400 leading-relaxed font-sans">
+              Whether deploying custom <strong>YOLO object detection</strong> models to run on edge servers, crafting native mobile applications with <strong>Flutter</strong>, wiring complex automation control panels, or terminating fiber optics for multi-gigabit camera architectures, I deliver enterprise-grade performance and clean technical architectures.
+            </p>
+
+            <!-- Focus Pillars Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-[#090f2290] border border-[#ffffff05] hover:border-[#00f2fe33] transition-all duration-300">
+                <div class="w-10 h-10 rounded-lg bg-[#00f2fe0d] flex items-center justify-center mb-3">
+                  <i class="fa-solid fa-code text-[#00f2fe]"></i>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Full-Stack & Mobile Development</h4>
+                <p class="text-gray-500 text-xs mt-1">Cross-platform engineering using modern architectures like Flutter and FastAPI.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-[#090f2290] border border-[#ffffff05] hover:border-[#4facfe33] transition-all duration-300">
+                <div class="w-10 h-10 rounded-lg bg-[#4facfe0d] flex items-center justify-center mb-3">
+                  <i class="fa-solid fa-eye text-[#4facfe]"></i>
+                </div>
+                <h4 class="text-white font-semibold text-sm">AI & Intelligent Computer Vision</h4>
+                <p class="text-gray-500 text-xs mt-1">Edge object tracking, OCR, image processing, and custom deep learning solutions.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-[#090f2290] border border-[#ffffff05] hover:border-[#4facfe33] transition-all duration-300">
+                <div class="w-10 h-10 rounded-lg bg-[#4facfe0d] flex items-center justify-center mb-3">
+                  <i class="fa-solid fa-server text-[#4facfe]"></i>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Active & Passive Infrastructure</h4>
+                <p class="text-gray-500 text-xs mt-1">CCTV systems, high-bandwidth optical-fiber cabling, NVR/DVR networks.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-[#090f2290] border border-[#ffffff05] hover:border-[#00f2fe33] transition-all duration-300">
+                <div class="w-10 h-10 rounded-lg bg-[#00f2fe0d] flex items-center justify-center mb-3">
+                  <i class="fa-solid fa-gears text-[#00f2fe]"></i>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Electrical Control & Embedded</h4>
+                <p class="text-gray-500 text-xs mt-1">Raspberry Pi and Arduino automation cabinets, industrial panel logic design.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Creative Stats/Profile Side -->
+          <div class="lg:col-span-5 reveal-fade-right">
+            <div class="relative p-6 sm:p-8 rounded-2xl bg-[#090f22a0] border border-[#ffffff08] shadow-2xl backdrop-blur-md">
+              <div class="absolute -top-3 -right-3 w-12 h-12 bg-gradient-to-br from-[#00f2fe] to-[#4facfe] rounded-xl flex items-center justify-center text-black font-semibold shadow-lg">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              
+              <h3 class="text-white font-mono text-sm uppercase tracking-wider text-[#00f2fe] mb-4">ENGINEER CONFIGURATION</h3>
+              
+              <div class="space-y-3 font-mono text-xs">
+                <div class="flex justify-between py-1 border-b border-[#ffffff05]">
+                  <span class="text-gray-500">Core Specialty:</span>
+                  <span class="text-white">Multidisciplinary Systems</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-[#ffffff05]">
+                  <span class="text-gray-500">Preferred OS:</span>
+                  <span class="text-[#00f2fe]">Arch Linux / Debian</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-[#ffffff05]">
+                  <span class="text-gray-500">Language Proficiencies:</span>
+                  <span class="text-white">Flutter (Dart), Python, C#</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-[#ffffff05]">
+                  <span class="text-gray-500">Edge Hardware:</span>
+                  <span class="text-[#4facfe]">Raspberry Pi, Jetson Nano</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-[#ffffff05]">
+                  <span class="text-gray-500">Infrastructure Norms:</span>
+                  <span class="text-white">ONVIF, RTSP, Optical FTTH</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-[#ffffff05]">
+                  <span class="text-gray-500">Panel Wiring Standard:</span>
+                  <span class="text-[#00f2fe]">IEC 60204-1</span>
+                </div>
+                <div class="flex justify-between py-1">
+                  <span class="text-gray-500">Mission:</span>
+                  <span class="text-white text-right max-w-[200px]">Empower industry through AI-driven automation</span>
+                </div>
+              </div>
+
+              <!-- Quick Quote -->
+              <div class="mt-6 p-4 rounded-xl bg-[#04081480] border border-[#ffffff05] relative">
+                <span class="absolute -top-3 left-4 text-3xl font-display text-[#00f2fe] opacity-30">“</span>
+                <p class="text-gray-400 text-xs italic font-sans leading-relaxed">
+                  Real engineering doesn't stop at the compiler. It connects the logic running in memory directly to the real-world sensors, video frames, switches, and relays.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section id="skills" class="py-24 relative overflow-hidden bg-[#040814]">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal-fade-up">
+          <span class="text-[#4facfe] font-mono text-xs uppercase tracking-widest">Stack Inventory</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mt-2">Technical Competence Grid</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-[#00f2fe] to-[#4facfe] mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Skills Categories Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Category 1: AI & Computer Vision -->
+          <div class="skill-card p-6 rounded-2xl bg-[#090f22a0] border border-[#ffffff05] hover:border-[#00f2fe33] transition-all duration-300 hover:-translate-y-2 group reveal-fade-up">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#00f2fe0d] to-[#4facfe0d] border border-[#00f2fe20] flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-eye text-[#00f2fe] text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-white font-display font-semibold text-lg">AI & Computer Vision</h3>
+                <span class="text-xs text-[#00f2fe] font-mono">Deep Learning & Edge Logic</span>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">YOLO Object Detection & Tracking</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">95%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="95%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">OpenCV & Digital Image Processing</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">90%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="90%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">TensorFlow / PyTorch / ONNX</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">85%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="85%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Optical Character Recognition (OCR)</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">80%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Mobile Development -->
+          <div class="skill-card p-6 rounded-2xl bg-[#090f22a0] border border-[#ffffff05] hover:border-[#4facfe33] transition-all duration-300 hover:-translate-y-2 group reveal-fade-up" style="animation-delay: 100ms;">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#00f2fe0d] to-[#4facfe0d] border border-[#4facfe20] flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-mobile-screen-button text-[#4facfe] text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-white font-display font-semibold text-lg">Mobile Development</h3>
+                <span class="text-xs text-[#4facfe] font-mono">Cross-Platform UI</span>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Flutter Framework (Android & iOS)</span>
+                  <span class="text-[#4facfe] font-mono font-medium">92%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="92%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Dart Language / State Managers</span>
+                  <span class="text-[#4facfe] font-mono font-medium">88%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="88%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Firebase Integration & Firestore</span>
+                  <span class="text-[#4facfe] font-mono font-medium">85%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="85%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">REST API Integration & Local Cache</span>
+                  <span class="text-[#4facfe] font-mono font-medium">90%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: CCTV & Surveillance Systems -->
+          <div class="skill-card p-6 rounded-2xl bg-[#090f22a0] border border-[#ffffff05] hover:border-[#00f2fe33] transition-all duration-300 hover:-translate-y-2 group reveal-fade-up" style="animation-delay: 200ms;">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#00f2fe0d] to-[#4facfe0d] border border-[#00f2fe20] flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-video text-[#00f2fe] text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-white font-display font-semibold text-lg">CCTV & Surveillance</h3>
+                <span class="text-xs text-[#00f2fe] font-mono">Infrastructure & Integration</span>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Surveillance Layout & Design</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">95%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="95%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">NVR / DVR Server Integration</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">90%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="90%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">IP Cameras & ONVIF / RTSP</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">95%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="95%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Video Management Systems (VMS)</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">85%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Passive Network Infrastructure -->
+          <div class="skill-card p-6 rounded-2xl bg-[#090f22a0] border border-[#ffffff05] hover:border-[#4facfe33] transition-all duration-300 hover:-translate-y-2 group reveal-fade-up">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#00f2fe0d] to-[#4facfe0d] border border-[#4facfe20] flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-network-wired text-[#4facfe] text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-white font-display font-semibold text-lg">Passive Networks</h3>
+                <span class="text-xs text-[#4facfe] font-mono">Structured Physical Media</span>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Cabling (Cat6 / Cat6a / Cat7)</span>
+                  <span class="text-[#4facfe] font-mono font-medium">92%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="92%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Fiber Optics Splicing & Terminals</span>
+                  <span class="text-[#4facfe] font-mono font-medium">80%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="80%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Patch Panels & Cabinet Assembly</span>
+                  <span class="text-[#4facfe] font-mono font-medium">90%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="90%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Network Auditing & Diagnostics</span>
+                  <span class="text-[#4facfe] font-mono font-medium">85%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Embedded Systems & Raspberry Pi -->
+          <div class="skill-card p-6 rounded-2xl bg-[#090f22a0] border border-[#ffffff05] hover:border-[#00f2fe33] transition-all duration-300 hover:-translate-y-2 group reveal-fade-up" style="animation-delay: 100ms;">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#00f2fe0d] to-[#4facfe0d] border border-[#00f2fe20] flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-microchip text-[#00f2fe] text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-white font-display font-semibold text-lg">Embedded Systems</h3>
+                <span class="text-xs text-[#00f2fe] font-mono">Microcontrollers & IoT</span>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Raspberry Pi (SBC) Hardware Architecture</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">95%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="95%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">GPIO Interfacing & I2C/SPI Protocols</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">88%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="88%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Linux System Admin & Bash Scripting</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">90%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="90%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">ESP32 / Arduino / RTOS</span>
+                  <span class="text-[#00f2fe] font-mono font-medium">80%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 6: Unity Game Development -->
+          <div class="skill-card p-6 rounded-2xl bg-[#090f22a0] border border-[#ffffff05] hover:border-[#4facfe33] transition-all duration-300 hover:-translate-y-2 group reveal-fade-up" style="animation-delay: 200ms;">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#00f2fe0d] to-[#4facfe0d] border border-[#4facfe20] flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-gamepad text-[#4facfe] text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-white font-display font-semibold text-lg">Unity Game Development</h3>
+                <span class="text-xs text-[#4facfe] font-mono">C# & Real-Time Interactive</span>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">C# Scripting & OOP Architecture</span>
+                  <span class="text-[#4facfe] font-mono font-medium">90%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="90%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Unity Engine (2D/3D & Physics)</span>
+                  <span class="text-[#4facfe] font-mono font-medium">88%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="88%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Gameplay Systems & State Machines</span>
+                  <span class="text-[#4facfe] font-mono font-medium">85%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="85%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs">
+                  <span class="text-gray-300 font-medium">Vector Mathematics & Shaders</span>
+                  <span class="text-[#4facfe] font-mono font-medium">80%</span>
+                </div>
+                <div class="w-full h-1.5 bg-[#040814] rounded-full overflow-hidden">
+                  <div class="skill-progress h-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] rounded-full" data-progress="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECTS SECTION -->
+    <section id="projects" class="py-24 relative overflow-hidden bg-[#04081440]">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal-fade-up">
+          <span class="text-[#00f2fe] font-mono text-xs uppercase tracking-widest">Case Studies</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mt-2">Signature Projects</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-[#00f2fe] to-[#4facfe] mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="flex flex-wrap justify-center items-center gap-3 mb-16 reveal-fade-up">
+          <button class="filter-btn active" data-filter="all">All Sectors</button>
+          <button class="filter-btn" data-filter="software-ai">Software & AI</button>
+          <button class="filter-btn" data-filter="cctv-net">CCTV & Networks</button>
+          <button class="filter-btn" data-filter="embedded-elec">Hardware & Industrial</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-container">
+          
+          <!-- Project 1: AI Vehicle Detection System -->
+          <div class="project-card rounded-2xl overflow-hidden bg-[#090f22a0] border border-[#ffffff05] group hover:border-[#00f2fe33] transition-all duration-300 reveal-fade-up" data-category="software-ai">
+            <div class="relative h-48 overflow-hidden">
+              <div class="absolute inset-0 bg-[#00f2fe20] mix-blend-multiply opacity-30 z-10 transition-opacity group-hover:opacity-0"></div>
+              <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&w=800&q=80" alt="AI Vehicle Detection" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <span class="absolute top-4 left-4 z-20 px-2.5 py-1 bg-[#040814c0] backdrop-blur-md rounded border border-[#00f2fe22] text-[#00f2fe] font-mono text-[10px] uppercase">AI & Vision</span>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-white font-display font-bold text-lg group-hover:text-[#00f2fe] transition-colors">AI Vehicle Detection & Analytics</h3>
+              <p class="text-gray-400 text-xs leading-relaxed line-clamp-3">
+                High-performance edge intelligence using custom-trained YOLO object tracking models to classify, count, and capture vehicle flow metrics from remote RTSP streams. Generates analytical dashboards in real-time.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tag">YOLOv8</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Python</span>
+                <span class="tag">NVIDIA Jetson</span>
+              </div>
+              <div class="flex items-center gap-4 pt-2">
+                <a href="#" class="project-link" aria-label="GitHub Repository"><i class="fa-brands fa-github text-sm"></i> Codebase</a>
+                <a href="#" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square text-sm"></i> Demonstration</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Automatic License Plate Recognition -->
+          <div class="project-card rounded-2xl overflow-hidden bg-[#090f22a0] border border-[#ffffff05] group hover:border-[#00f2fe33] transition-all duration-300 reveal-fade-up" data-category="software-ai" style="animation-delay: 50ms;">
+            <div class="relative h-48 overflow-hidden">
+              <div class="absolute inset-0 bg-[#00f2fe20] mix-blend-multiply opacity-30 z-10 transition-opacity group-hover:opacity-0"></div>
+              <img src="https://images.unsplash.com/photo-1506521788723-868114856b3d?auto=format&fit=crop&w=800&q=80" alt="ANPR OCR System" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <span class="absolute top-4 left-4 z-20 px-2.5 py-1 bg-[#040814c0] backdrop-blur-md rounded border border-[#00f2fe22] text-[#00f2fe] font-mono text-[10px] uppercase">OCR / Deep Learning</span>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-white font-display font-bold text-lg group-hover:text-[#00f2fe] transition-colors">Automatic License Plate Recognizer (ANPR)</h3>
+              <p class="text-gray-400 text-xs leading-relaxed line-clamp-3">
+                Sub-50ms character segmentation and prediction pipeline. Leverages YOLO for vehicle plate bounding box localization and customized convolutional OCR blocks to identify and process multi-format plates in high speed environments.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tag">Tesseract</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+              </div>
+              <div class="flex items-center gap-4 pt-2">
+                <a href="#" class="project-link"><i class="fa-brands fa-github text-sm"></i> Codebase</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square text-sm"></i> Demonstration</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Flutter CCTV Monitoring App -->
+          <div class="project-card rounded-2xl overflow-hidden bg-[#090f22a0] border border-[#ffffff05] group hover:border-[#4facfe33] transition-all duration-300 reveal-fade-up" data-category="cctv-net" style="animation-delay: 100ms;">
+            <div class="relative h-48 overflow-hidden">
+              <div class="absolute inset-0 bg-[#4facfe20] mix-blend-multiply opacity-30 z-10 transition-opacity group-hover:opacity-0"></div>
+              <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Flutter CCTV App" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <span class="absolute top-4 left-4 z-20 px-2.5 py-1 bg-[#040814c0] backdrop-blur-md rounded border border-[#4facfe22] text-[#4facfe] font-mono text-[10px] uppercase">Mobile / IoT</span>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-white font-display font-bold text-lg group-hover:text-[#4facfe] transition-colors">Flutter CCTV Monitoring App</h3>
+              <p class="text-gray-400 text-xs leading-relaxed line-clamp-3">
+                Cross-platform mobile client integrating multi-channel IP camera viewing, ONVIF pan-tilt-zoom (PTZ) controller integration, real-time push alerts via Firebase, and custom video decoding optimized for mobile hardware rendering.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">RTSP / WebRTC</span>
+                <span class="tag">Firebase</span>
+              </div>
+              <div class="flex items-center gap-4 pt-2">
+                <a href="#" class="project-link"><i class="fa-brands fa-github text-sm"></i> Codebase</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square text-sm"></i> Demonstration</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Raspberry Pi Smart Security System -->
+          <div class="project-card rounded-2xl overflow-hidden bg-[#090f22a0] border border-[#ffffff05] group hover:border-[#00f2fe33] transition-all duration-300 reveal-fade-up" data-category="embedded-elec">
+            <div class="relative h-48 overflow-hidden">
+              <div class="absolute inset-0 bg-[#00f2fe20] mix-blend-multiply opacity-30 z-10 transition-opacity group-hover:opacity-0"></div>
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Raspberry Pi Security" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <span class="absolute top-4 left-4 z-20 px-2.5 py-1 bg-[#040814c0] backdrop-blur-md rounded border border-[#00f2fe22] text-[#00f2fe] font-mono text-[10px] uppercase">Edge Computing</span>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-white font-display font-bold text-lg group-hover:text-[#00f2fe] transition-colors">Raspberry Pi Smart Security Edge</h3>
+              <p class="text-gray-400 text-xs leading-relaxed line-clamp-3">
+                Low-power hardware hub interfacing camera matrices with physical GPIO alert devices. Employs lightweight local ML on-device models to detect human shapes, triggering immediate solid-state relay warnings and secure offsite media uploads.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tag">Raspberry Pi</span>
+                <span class="tag">Python</span>
+                <span class="tag">GPIO</span>
+                <span class="tag">TensorFlow Lite</span>
+              </div>
+              <div class="flex items-center gap-4 pt-2">
+                <a href="#" class="project-link"><i class="fa-brands fa-github text-sm"></i> Codebase</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square text-sm"></i> Demonstration</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Industrial CCTV Infrastructure -->
+          <div class="project-card rounded-2xl overflow-hidden bg-[#090f22a0] border border-[#ffffff05] group hover:border-[#4facfe33] transition-all duration-300 reveal-fade-up" data-category="cctv-net" style="animation-delay: 50ms;">
+            <div class="relative h-48 overflow-hidden">
+              <div class="absolute inset-0 bg-[#4facfe20] mix-blend-multiply opacity-30 z-10 transition-opacity group-hover:opacity-0"></div>
+              <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80" alt="CCTV Infrastructure" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <span class="absolute top-4 left-4 z-20 px-2.5 py-1 bg-[#040814c0] backdrop-blur-md rounded border border-[#4facfe22] text-[#4facfe] font-mono text-[10px] uppercase">Systems Design</span>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-white font-display font-bold text-lg group-hover:text-[#4facfe] transition-colors">Industrial CCTV Infrastructure Installation</h3>
+              <p class="text-gray-400 text-xs leading-relaxed line-clamp-3">
+                Architectural mapping and physically installing a complex 40+ camera industrial surveillance network. Integrates fiber-optic rings, customized network topologies, and high capacity NVR failover servers operating on secure isolated subnets.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tag">IP Cameras</span>
+                <span class="tag">Fiber Rings</span>
+                <span class="tag">CCTV Topologies</span>
+                <span class="tag">VMS Setup</span>
+              </div>
+              <div class="flex items-center gap-4 pt-2">
+                <a href="#" class="project-link"><i class="fa-brands fa-github text-sm"></i> Architecture docs</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square text-sm"></i> Photos</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Passive Network Installation -->
+          <div class="project-card rounded-2xl overflow-hidden bg-[#090f22a0] border border-[#ffffff05] group hover:border-[#4facfe33] transition-all duration-300 reveal-fade-up" data-category="cctv-net" style="animation-delay: 100ms;">
+            <div class="relative h-48 overflow-hidden">
+              <div class="absolute inset-0 bg-[#4facfe20] mix-blend-multiply opacity-30 z-10 transition-opacity group-hover:opacity-0"></div>
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Network Installation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <span class="absolute top-4 left-4 z-20 px-2.5 py-1 bg-[#040814c0] backdrop-blur-md rounded border border-[#4facfe22] text-[#4facfe] font-mono text-[10px] uppercase">Infrastructure</span>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-white font-display font-bold text-lg group-hover:text-[#4facfe] transition-colors">Multi-Floor Structured Cabling Architecture</h3>
+              <p class="text-gray-400 text-xs leading-relaxed line-clamp-3">
+                Full physical implementation and structural testing of passive cabling across three modern corporate floors. Includes over 200 Cat6a endpoints, optical backhauls, rack wire management layouts, and thorough OTDR verification.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tag">Cat6a Ethernet</span>
+                <span class="tag">Fiber Splicing</span>
+                <span class="tag">Fluke Certification</span>
+                <span class="tag">Rack Layouts</span>
+              </div>
+              <div class="flex items-center gap-4 pt-2">
+                <a href="#" class="project-link"><i class="fa-brands fa-github text-sm"></i> Cable maps</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square text-sm"></i> Performance</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: Real-Time 3D Simulation & Unity Game -->
+          <div class="project-card rounded-2xl overflow-hidden bg-[#090f22a0] border border-[#ffffff05] group hover:border-[#00f2fe33] transition-all duration-300 reveal-fade-up" data-category="software-ai">
+            <div class="relative h-48 overflow-hidden">
+              <div class="absolute inset-0 bg-[#00f2fe20] mix-blend-multiply opacity-30 z-10 transition-opacity group-hover:opacity-0"></div>
+              <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&w=800&q=80" alt="Unity Game Development" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <span class="absolute top-4 left-4 z-20 px-2.5 py-1 bg-[#040814c0] backdrop-blur-md rounded border border-[#00f2fe22] text-[#00f2fe] font-mono text-[10px] uppercase">Game Dev / Unity</span>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-white font-display font-bold text-lg group-hover:text-[#00f2fe] transition-colors">Cybernetic Odyssey: 3D Unity Action RPG</h3>
+              <p class="text-gray-400 text-xs leading-relaxed line-clamp-3">
+                An immersive sci-fi action game developed in Unity. Features highly optimized C# scripts, custom physics-based character controllers, finite state machines for advanced AI enemy behavior, and fully tailored post-processing and shaders.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tag">Unity 3D</span>
+                <span class="tag">C# Scripting</span>
+                <span class="tag">Shader Graph</span>
+                <span class="tag">State Machines</span>
+              </div>
+              <div class="flex items-center gap-4 pt-2">
+                <a href="https://github.com/triborg34" target="_blank" class="project-link"><i class="fa-brands fa-github text-sm"></i> Codebase</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square text-sm"></i> Gameplay Demo</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EXPERIENCE TIMELINE SECTION -->
+    <section id="experience" class="py-24 relative overflow-hidden bg-[#040814]">
+      <div class="max-w-5xl mx-auto px-6 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal-fade-up">
+          <span class="text-[#4facfe] font-mono text-xs uppercase tracking-widest">Career Milestones</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mt-2">Professional Timeline</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-[#00f2fe] to-[#4facfe] mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Vertical Timeline -->
+        <div class="relative border-l border-[#00f2fe22] ml-4 md:ml-32 space-y-12">
+          
+          <!-- Timeline Item 1 -->
+          <div class="relative pl-8 md:pl-12 group reveal-fade-left">
+            <!-- Icon Indicator -->
+            <div class="absolute -left-[17px] top-1 w-8 h-8 rounded-full bg-[#040814] border-2 border-[#00f2fe] flex items-center justify-center text-[#00f2fe] group-hover:scale-110 group-hover:bg-[#00f2fe] group-hover:text-black transition-all shadow-[0_0_15px_rgba(0,242,254,0.3)]">
+              <i class="fa-solid fa-code text-xs"></i>
+            </div>
+            
+            <!-- Date Banner (Desktop only side date layout) -->
+            <div class="hidden md:block absolute -left-36 top-1.5 text-right w-24">
+              <span class="text-[#00f2fe] font-mono text-xs uppercase font-semibold">2024 - PRES</span>
+            </div>
+            
+            <!-- Mobile Date Indicator -->
+            <div class="md:hidden inline-block mb-1.5 px-2 py-0.5 rounded bg-[#00f2fe0f] border border-[#00f2fe33] text-[#00f2fe] font-mono text-[10px]">
+              2024 - PRESENT
+            </div>
+
+            <!-- Content Card -->
+            <div class="p-6 rounded-2xl bg-[#090f2290] border border-[#ffffff05] hover:border-[#00f2fe22] transition-colors shadow-xl">
+              <h3 class="text-white font-display font-bold text-lg">Senior Flutter & Computer Vision Engineer</h3>
+              <p class="text-xs text-gray-500 font-mono mt-0.5">Custom Software Engineering & AI Solutions</p>
+              <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+                Spearheading the engineering of real-time video analytics clients. Leading integration of edge YOLO model outputs into high performance cross-platform mobile apps using Flutter. Architecting local model hosting structures on low-power devices.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="relative pl-8 md:pl-12 group reveal-fade-left" style="animation-delay: 50ms;">
+            <!-- Icon Indicator -->
+            <div class="absolute -left-[17px] top-1 w-8 h-8 rounded-full bg-[#040814] border-2 border-[#4facfe] flex items-center justify-center text-[#4facfe] group-hover:scale-110 group-hover:bg-[#4facfe] group-hover:text-black transition-all shadow-[0_0_15px_rgba(79,172,254,0.3)]">
+              <i class="fa-solid fa-eye text-xs"></i>
+            </div>
+            
+            <div class="hidden md:block absolute -left-36 top-1.5 text-right w-24">
+              <span class="text-[#4facfe] font-mono text-xs uppercase font-semibold">2022 - 2024</span>
+            </div>
+            
+            <div class="md:hidden inline-block mb-1.5 px-2 py-0.5 rounded bg-[#4facfe0f] border border-[#4facfe33] text-[#4facfe] font-mono text-[10px]">
+              2022 - 2024
+            </div>
+
+            <div class="p-6 rounded-2xl bg-[#090f2290] border border-[#ffffff05] hover:border-[#4facfe22] transition-colors shadow-xl">
+              <h3 class="text-white font-display font-bold text-lg">Computer Vision & YOLO Researcher</h3>
+              <p class="text-xs text-gray-500 font-mono mt-0.5">Applied Artificial Intelligence Lab</p>
+              <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+                Researched deep learning-based object detection optimizations. Built custom OCR engines, vehicle speed estimation algorithms via single-camera calibration, and implemented fast ONNX and TensorRT edge conversions for production-ready model execution.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="relative pl-8 md:pl-12 group reveal-fade-left" style="animation-delay: 100ms;">
+            <!-- Icon Indicator -->
+            <div class="absolute -left-[17px] top-1 w-8 h-8 rounded-full bg-[#040814] border-2 border-[#00f2fe] flex items-center justify-center text-[#00f2fe] group-hover:scale-110 group-hover:bg-[#00f2fe] group-hover:text-black transition-all shadow-[0_0_15px_rgba(0,242,254,0.3)]">
+              <i class="fa-solid fa-video text-xs"></i>
+            </div>
+            
+            <div class="hidden md:block absolute -left-36 top-1.5 text-right w-24">
+              <span class="text-[#00f2fe] font-mono text-xs uppercase font-semibold">2020 - 2022</span>
+            </div>
+            
+            <div class="md:hidden inline-block mb-1.5 px-2 py-0.5 rounded bg-[#00f2fe0f] border border-[#00f2fe33] text-[#00f2fe] font-mono text-[10px]">
+              2020 - 2022
+            </div>
+
+            <div class="p-6 rounded-2xl bg-[#090f2290] border border-[#ffffff05] hover:border-[#00f2fe22] transition-colors shadow-xl">
+              <h3 class="text-white font-display font-bold text-lg">Surveillance Infrastructure Architect</h3>
+              <p class="text-xs text-gray-500 font-mono mt-0.5">Advanced Security Systems Inc.</p>
+              <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+                Supervised large-scale CCTV physical installations and server logic configuration. Designed fiber backbones for camera arrays, drafted IP camera routing, configured server disk arrays for long-term record archiving under rigid ISO compliance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="relative pl-8 md:pl-12 group reveal-fade-left" style="animation-delay: 150ms;">
+            <!-- Icon Indicator -->
+            <div class="absolute -left-[17px] top-1 w-8 h-8 rounded-full bg-[#040814] border-2 border-[#4facfe] flex items-center justify-center text-[#4facfe] group-hover:scale-110 group-hover:bg-[#4facfe] group-hover:text-black transition-all shadow-[0_0_15px_rgba(79,172,254,0.3)]">
+              <i class="fa-solid fa-network-wired text-xs"></i>
+            </div>
+            
+            <div class="hidden md:block absolute -left-36 top-1.5 text-right w-24">
+              <span class="text-[#4facfe] font-mono text-xs uppercase font-semibold">2018 - 2020</span>
+            </div>
+            
+            <div class="md:hidden inline-block mb-1.5 px-2 py-0.5 rounded bg-[#4facfe0f] border border-[#4facfe33] text-[#4facfe] font-mono text-[10px]">
+              2018 - 2020
+            </div>
+
+            <div class="p-6 rounded-2xl bg-[#090f2290] border border-[#ffffff05] hover:border-[#4facfe22] transition-colors shadow-xl">
+              <h3 class="text-white font-display font-bold text-lg">Passive Network & Infrastructure Specialist</h3>
+              <p class="text-xs text-gray-500 font-mono mt-0.5">Enterprise Telecom Systems</p>
+              <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+                Constructed high-speed corporate communication networks. Handled fiber optic terminations, multi-point patch-bay layout mapping, complex wire diagnostic analysis, and performance validation certification using specialized Fluke scanners.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5 -->
+          <div class="relative pl-8 md:pl-12 group reveal-fade-left" style="animation-delay: 200ms;">
+            <!-- Icon Indicator -->
+            <div class="absolute -left-[17px] top-1 w-8 h-8 rounded-full bg-[#040814] border-2 border-[#00f2fe] flex items-center justify-center text-[#00f2fe] group-hover:scale-110 group-hover:bg-[#00f2fe] group-hover:text-black transition-all shadow-[0_0_15px_rgba(0,242,254,0.3)]">
+              <i class="fa-solid fa-gamepad text-xs"></i>
+            </div>
+            
+            <div class="hidden md:block absolute -left-36 top-1.5 text-right w-24">
+              <span class="text-[#00f2fe] font-mono text-xs uppercase font-semibold">2016 - 2018</span>
+            </div>
+            
+            <div class="md:hidden inline-block mb-1.5 px-2 py-0.5 rounded bg-[#00f2fe0f] border border-[#00f2fe33] text-[#00f2fe] font-mono text-[10px]">
+              2016 - 2018
+            </div>
+
+            <div class="p-6 rounded-2xl bg-[#090f2290] border border-[#ffffff05] hover:border-[#00f2fe22] transition-colors shadow-xl">
+              <h3 class="text-white font-display font-bold text-lg">Unity Game Developer & C# Engineer</h3>
+              <p class="text-xs text-gray-500 font-mono mt-0.5">Immersive Interactive Studios</p>
+              <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+                Developed and optimized gameplay systems for 3D simulation projects and arcade game genres using C# and Unity. Focused on custom physics integrations, character controllers, clean decoupled codebase architecture, and dynamic environmental visual effects.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CERTIFICATIONS SECTION -->
+    <section id="certifications" class="py-24 relative overflow-hidden bg-[#04081440]">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal-fade-up">
+          <span class="text-[#00f2fe] font-mono text-xs uppercase tracking-widest">Credentials</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mt-2">Professional Certifications</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-[#00f2fe] to-[#4facfe] mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Credentials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Cert Card 1 -->
+          <div class="p-6 rounded-2xl bg-[#090f22a0] border border-[#ffffff05] hover:border-[#00f2fe33] transition-all duration-300 group hover:-translate-y-1 reveal-fade-up">
+            <div class="w-12 h-12 rounded-xl bg-[#00f2fe0a] border border-[#00f2fe22] flex items-center justify-center text-[#00f2fe] mb-4 group-hover:scale-105 transition-transform">
+              <i class="fa-solid fa-brain text-xl"></i>
+            </div>
+            <h3 class="text-white font-display font-semibold text-sm">Deep Learning Specialization</h3>
+            <p class="text-gray-500 font-mono text-[10px] mt-1">DeepLearning.AI / Coursera</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              In-depth specialization covering convolutional neural networks, model optimization, sequence layers, and object detection frameworks.
+            </p>
+          </div>
+
+          <!-- Cert Card 2 -->
+          <div class="p-6 rounded-2xl bg-[#090f22a0] border border-[#ffffff05] hover:border-[#4facfe33] transition-all duration-300 group hover:-translate-y-1 reveal-fade-up" style="animation-delay: 50ms;">
+            <div class="w-12 h-12 rounded-xl bg-[#4facfe0a] border border-[#4facfe22] flex items-center justify-center text-[#4facfe] mb-4 group-hover:scale-105 transition-transform">
+              <i class="fa-solid fa-code text-xl"></i>
+            </div>
+            <h3 class="text-white font-display font-semibold text-sm">Flutter Certified Expert</h3>
+            <p class="text-gray-500 font-mono text-[10px] mt-1">Google Developer Groups / Udacity</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              Certification confirming comprehensive competency in cross-platform UI architectures, dynamic Dart programming, and advanced state frameworks.
+            </p>
+          </div>
+
+          <!-- Cert Card 3 -->
+          <div class="p-6 rounded-2xl bg-[#090f22a0] border border-[#ffffff05] hover:border-[#00f2fe33] transition-all duration-300 group hover:-translate-y-1 reveal-fade-up" style="animation-delay: 100ms;">
+            <div class="w-12 h-12 rounded-xl bg-[#00f2fe0a] border border-[#00f2fe22] flex items-center justify-center text-[#00f2fe] mb-4 group-hover:scale-105 transition-transform">
+              <i class="fa-solid fa-shield text-xl"></i>
+            </div>
+            <h3 class="text-white font-display font-semibold text-sm">CCTV System Engineer (CCSE)</h3>
+            <p class="text-gray-500 font-mono text-[10px] mt-1">Surveillance Standards Council</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              Advanced professional certification focused on IP CCTV surveillance layout mapping, NVR routing configuration, and system installation compliance.
+            </p>
+          </div>
+
+          <!-- Cert Card 4 -->
+          <div class="p-6 rounded-2xl bg-[#090f22a0] border border-[#ffffff05] hover:border-[#4facfe33] transition-all duration-300 group hover:-translate-y-1 reveal-fade-up" style="animation-delay: 150ms;">
+            <div class="w-12 h-12 rounded-xl bg-[#4facfe0a] border border-[#4facfe22] flex items-center justify-center text-[#4facfe] mb-4 group-hover:scale-105 transition-transform">
+              <i class="fa-solid fa-gamepad text-xl"></i>
+            </div>
+            <h3 class="text-white font-display font-semibold text-sm">Unity Certified Developer</h3>
+            <p class="text-gray-500 font-mono text-[10px] mt-1">Unity Technologies</p>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">
+              Professional credential validating comprehensive mastery over the Unity Engine, C# game programming, UI design pipelines, and performance profiling.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. STATISTICS SECTION (COUNTERS) -->
+    <section id="stats" class="py-20 relative overflow-hidden bg-gradient-to-br from-[#090f22] to-[#040814] border-y border-[#ffffff03]">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+          
+          <!-- Stat 1 -->
+          <div class="space-y-1 reveal-fade-up">
+            <h3 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight leading-none">
+              <span class="counter" data-target="8">0</span>+
+            </h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase tracking-wider">Years Experience</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="space-y-1 reveal-fade-up" style="animation-delay: 50ms;">
+            <h3 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight leading-none">
+              <span class="counter" data-target="45">0</span>+
+            </h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase tracking-wider">Projects Completed</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="space-y-1 reveal-fade-up" style="animation-delay: 100ms;">
+            <h3 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight leading-none">
+              <span class="counter" data-target="20">0</span>+
+            </h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase tracking-wider">AI Models Built</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="space-y-1 reveal-fade-up" style="animation-delay: 150ms;">
+            <h3 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight leading-none">
+              <span class="counter" data-target="35">0</span>+
+            </h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase tracking-wider">CCTV Installations</p>
+          </div>
+
+          <!-- Stat 5 -->
+          <div class="space-y-1 reveal-fade-up" style="animation-delay: 200ms;">
+            <h3 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight leading-none">
+              <span class="counter" data-target="50">0</span>+
+            </h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase tracking-wider">Networks Installed</p>
+          </div>
+
+          <!-- Stat 6 -->
+          <div class="space-y-1 reveal-fade-up" style="animation-delay: 250ms;">
+            <h3 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight leading-none">
+              <span class="counter" data-target="100">0</span>%
+            </h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase tracking-wider">Satisfied Clients</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION -->
+    <section id="contact" class="py-24 relative overflow-hidden bg-[#040814]">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal-fade-up">
+          <span class="text-[#00f2fe] font-mono text-xs uppercase tracking-widest">Connect</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mt-2">Get In Touch</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-[#00f2fe] to-[#4facfe] mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Info Cards -->
+          <div class="lg:col-span-5 space-y-6 reveal-fade-left">
+            <h3 class="text-2xl font-display font-semibold text-white">Let's build something exceptional together</h3>
+            <p class="text-gray-400 text-sm leading-relaxed font-sans">
+              Have a complex automation problem, an edge computer vision project, or need structured passive physical networking configured for camera systems? Drop a message, and I'll respond within 24 hours.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Card 1: Email -->
+              <div class="p-4 rounded-xl bg-[#090f22a0] border border-[#ffffff05] flex gap-4 items-center">
+                <div class="w-10 h-10 rounded-lg bg-[#00f2fe0d] flex items-center justify-center text-[#00f2fe]">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <h4 class="text-white text-xs font-mono uppercase text-gray-500">Email Me</h4>
+                  <a href="mailto:aref.mousavi.dev@gmail.com" class="text-white text-xs hover:text-[#00f2fe] transition-colors break-all">aref.mousavi.dev@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Card 2: GitHub -->
+              <div class="p-4 rounded-xl bg-[#090f22a0] border border-[#ffffff05] flex gap-4 items-center">
+                <div class="w-10 h-10 rounded-lg bg-[#4facfe0d] flex items-center justify-center text-[#4facfe]">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div>
+                  <h4 class="text-white text-xs font-mono uppercase text-gray-500">GitHub</h4>
+                  <a href="https://github.com/triborg34" target="_blank" class="text-white text-xs hover:text-[#4facfe] transition-colors">github.com/triborg34</a>
+                </div>
+              </div>
+
+              <!-- Card 3: LinkedIn -->
+              <div class="p-4 rounded-xl bg-[#090f22a0] border border-[#ffffff05] flex gap-4 items-center">
+                <div class="w-10 h-10 rounded-lg bg-[#4facfe0d] flex items-center justify-center text-[#4facfe]">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div>
+                  <h4 class="text-white text-xs font-mono uppercase text-gray-500">LinkedIn</h4>
+                  <a href="https://linkedin.com/in/aref-mousavi" target="_blank" class="text-white text-xs hover:text-[#4facfe] transition-colors">linkedin.com/in/aref-mousavi</a>
+                </div>
+              </div>
+
+              <!-- Card 4: Location -->
+              <div class="p-4 rounded-xl bg-[#090f22a0] border border-[#ffffff05] flex gap-4 items-center">
+                <div class="w-10 h-10 rounded-lg bg-[#00f2fe0d] flex items-center justify-center text-[#00f2fe]">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h4 class="text-white text-xs font-mono uppercase text-gray-500">Location</h4>
+                  <span class="text-white text-xs">Iran, Ahwaz</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="lg:col-span-7 reveal-fade-right">
+            <form id="portfolio-contact-form" class="p-6 sm:p-8 rounded-2xl bg-[#090f22a0] border border-[#ffffff05] shadow-2xl backdrop-blur-md space-y-6">
+              
+              <!-- Form Success Message -->
+              <div id="form-success" class="hidden p-4 rounded-xl bg-[#00f2fe0f] border border-[#00f2fe33] text-center">
+                <i class="fa-solid fa-circle-check text-[#00f2fe] text-2xl mb-2"></i>
+                <h4 class="text-white font-semibold">Message Dispatched</h4>
+                <p class="text-gray-400 text-xs mt-1">Thank you! Your inquiry was received successfully.</p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" id="form-fields-container">
+                <!-- Name Field -->
+                <div class="space-y-1.5">
+                  <label for="contact-name" class="text-xs font-mono text-gray-500 uppercase tracking-wider">Your Name</label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500 pointer-events-none"><i class="fa-solid fa-user text-xs"></i></span>
+                    <input type="text" id="contact-name" required class="form-input" placeholder="e.g. John Doe" />
+                  </div>
+                </div>
+
+                <!-- Email Field -->
+                <div class="space-y-1.5">
+                  <label for="contact-email" class="text-xs font-mono text-gray-500 uppercase tracking-wider">Your Email</label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500 pointer-events-none"><i class="fa-solid fa-envelope text-xs"></i></span>
+                    <input type="email" id="contact-email" required class="form-input" placeholder="john@example.com" />
+                  </div>
+                </div>
+
+                <!-- Message Field -->
+                <div class="sm:col-span-2 space-y-1.5">
+                  <label for="contact-message" class="text-xs font-mono text-gray-500 uppercase tracking-wider">Your Message</label>
+                  <textarea id="contact-message" rows="5" required class="form-input h-32 py-3 resize-none" placeholder="Explain your project details..."></textarea>
+                </div>
+
+                <div class="sm:col-span-2 pt-2">
+                  <button type="submit" class="btn btn-primary w-full group justify-center py-3 text-sm">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane ml-2 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 text-xs"></i>
+                  </button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="py-12 border-t border-[#ffffff05] bg-[#02050e] relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <!-- Left Copyright -->
+        <div class="text-center md:text-left">
+          <p class="text-gray-500 text-xs">
+            &copy; 2026 Aref Mousavi. All rights reserved.
+          </p>
+          <p class="text-[10px] text-gray-600 font-mono mt-1">
+            Built using HTML, CSS, and Vanilla JS • Served via Vite
+          </p>
+        </div>
+
+        <!-- Center Name -->
+        <div class="flex items-center gap-2">
+          <span class="text-white font-display font-semibold text-sm tracking-tight">Aref Mousavi</span>
+          <span class="text-[10px] px-2 py-0.5 rounded bg-[#00f2fe0d] border border-[#00f2fe22] text-[#00f2fe] font-mono">Tech Specialist</span>
+        </div>
+
+        <!-- Right Social Icons -->
+        <div class="flex gap-4">
+          <a href="mailto:aref.mousavi.dev@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/triborg34" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/aref-mousavi" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

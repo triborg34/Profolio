@@ -389,28 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ==========================================
-  // 8. FLOATING RESUME FAB - Close handler
-  // ==========================================
-  const fab = document.getElementById('resume-fab');
-  const fabClose = document.getElementById('fab-close');
-  if (fabClose && fab) {
-    fabClose.addEventListener('click', () => {
-      fab.style.opacity = '0';
-      fab.style.transform = 'translateY(20px) scale(0.95)';
-      fab.style.pointerEvents = 'none';
-      setTimeout(() => fab.style.display = 'none', 300);
-      try { localStorage.setItem('resumeFabClosed', '1'); } catch(e) {}
-    });
-    // If user closed before, keep hidden (reset after 1 day maybe)
-    try {
-      if (localStorage.getItem('resumeFabClosed') === '1') {
-        // Keep visible anyway for demo, or hide? Let's keep visible but allow close
-      }
-    } catch(e) {}
-  }
-
-  // ==========================================
-  // 9. CONTACT FORM VALIDATION & SUBMISSION
+  // 8. CONTACT FORM VALIDATION & SUBMISSION
   // ==========================================
   const contactForm = document.getElementById('portfolio-contact-form');
   const formFieldsContainer = document.getElementById('form-fields-container');

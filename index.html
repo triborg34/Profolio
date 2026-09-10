@@ -1240,23 +1240,57 @@
       </div>
     </footer>
 
-    <!-- Floating Resume FAB - Always Visible -->
-    <div id="resume-fab" class="fixed z-40 flex flex-col gap-2" style="position:fixed; bottom:20px; right:20px; z-index:60;">
-      <!-- Main FAB -->
-      <div class="flex flex-col gap-2 p-2 rounded-2xl bg-[#090f22f0] backdrop-blur-md border border-[#ffffff10] shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
-        <a href="/Aref_Mousavi_Resume_EN.pdf" download="Aref_Mousavi_Resume_EN.pdf" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#00f2fe] to-[#4facfe] text-black font-display font-semibold text-xs hover:opacity-90 transition-opacity shadow-[0_4px_15px_rgba(0,242,254,0.3)]">
-          <i class="fa-solid fa-file-arrow-down"></i>
-          Resume EN
-        </a>
-        <a href="/Aref_Mousavi_Resume_FA.pdf" download="Aref_Mousavi_Resume_FA.pdf" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-[#090f22] border border-[#4facfe30] text-[#4facfe] font-mono text-xs hover:bg-[#4facfe10] hover:border-[#4facfe] transition-all justify-center">
-          <i class="fa-solid fa-file-arrow-down text-xs"></i>
-          رزومه فارسی
-        </a>
+    <!-- Floating Resume FAB - Premium Glassmorphism -->
+    <div id="resume-fab" class="fixed z-40 flex flex-col gap-2" style="position:fixed; bottom:24px; right:24px; z-index:60;">
+      <div class="relative p-3 rounded-[20px] bg-[#090f22f0] backdrop-blur-xl border border-[#00f2fe20] shadow-[0_20px_60px_rgba(0,242,254,0.15),0_8px_25px_rgba(0,0,0,0.5)] overflow-hidden group hover:shadow-[0_20px_60px_rgba(0,242,254,0.25)] transition-all duration-500" style="min-width: 240px;">
+        <!-- Subtle gradient glow inside -->
+        <div class="absolute -top-10 -right-10 w-20 h-20 bg-[#00f2fe] rounded-full blur-[40px] opacity-[0.08] pointer-events-none"></div>
+        <div class="absolute -bottom-10 -left-10 w-20 h-20 bg-[#4facfe] rounded-full blur-[40px] opacity-[0.08] pointer-events-none"></div>
+        
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-3 relative">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#00f2fe] to-[#4facfe] flex items-center justify-center text-black shadow-[0_4px_12px_rgba(0,242,254,0.35)]">
+              <i class="fa-solid fa-file-lines text-sm"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-white font-display font-bold text-xs leading-none">My Resume</span>
+              <span class="text-[#00f2fe] font-mono text-[10px] tracking-widest uppercase">ATS • 1 Page • Ready</span>
+            </div>
+          </div>
+          <button id="fab-close" class="w-6 h-6 rounded-full bg-[#040814] border border-[#ffffff0f] text-gray-500 hover:text-white hover:border-[#ffffff20] hover:bg-[#ffffff08] flex items-center justify-center text-[10px] transition-all" title="بستن" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex flex-col gap-2 relative">
+          <a href="/Aref_Mousavi_Resume_EN.pdf" download="Aref_Mousavi_Resume_EN.pdf" class="group/btn relative flex items-center justify-between px-4 py-3 rounded-xl bg-gradient-to-r from-[#00f2fe] to-[#4facfe] text-black font-display font-bold text-xs overflow-hidden hover:scale-[1.02] hover:shadow-[0_6px_20px_rgba(0,242,254,0.4)] transition-all duration-300">
+            <span class="flex items-center gap-2.5">
+              <span class="w-7 h-7 rounded-lg bg-black/15 flex items-center justify-center"><i class="fa-solid fa-file-arrow-down text-xs"></i></span>
+              <span>Resume EN<span class="font-normal opacity-70 ml-1">PDF</span></span>
+            </span>
+            <i class="fa-solid fa-arrow-right text-[10px] opacity-60 group-hover/btn:translate-x-1 transition-transform"></i>
+            <div class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
+          </a>
+          <a href="/Aref_Mousavi_Resume_FA.pdf" download="Aref_Mousavi_Resume_FA.pdf" class="group/btn flex items-center justify-between px-4 py-3 rounded-xl bg-[#040814] border border-[#4facfe25] text-white font-display font-semibold text-xs hover:bg-[#4facfe08] hover:border-[#4facfe50] hover:scale-[1.02] transition-all duration-300">
+            <span class="flex items-center gap-2.5">
+              <span class="w-7 h-7 rounded-lg bg-[#4facfe15] border border-[#4facfe20] flex items-center justify-center text-[#4facfe]"><i class="fa-solid fa-file-arrow-down text-xs"></i></span>
+              <span>رزومه فارسی<span class="font-mono font-normal text-[#4facfe] opacity-70 ml-1">PDF</span></span>
+            </span>
+            <i class="fa-solid fa-arrow-left text-[10px] opacity-40 group-hover/btn:-translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+
+        <!-- Footer meta -->
+        <div class="flex items-center justify-center gap-3 mt-3 pt-2.5 border-t border-[#ffffff05] relative">
+          <a href="/Aref_Mousavi_Resume_EN.docx" download class="text-[9px] font-mono text-gray-500 hover:text-gray-300 transition-colors flex items-center gap-1"><i class="fa-solid fa-file-word text-[10px] text-[#2b579a]"></i> Word EN</a>
+          <span class="w-1 h-1 rounded-full bg-[#ffffff15]"></span>
+          <a href="/Aref_Mousavi_Resume_FA.docx" download class="text-[9px] font-mono text-gray-500 hover:text-gray-300 transition-colors flex items-center gap-1"><i class="fa-solid fa-file-word text-[10px] text-[#2b579a]"></i> Word FA</a>
+          <span class="w-1 h-1 rounded-full bg-[#ffffff15]"></span>
+          <span class="text-[9px] font-mono text-[#00f2fe60] flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#00f2fe] animate-pulse"></span> Ready to hire</span>
+        </div>
       </div>
-      <!-- Close hint -->
-      <button id="fab-close" class="self-end w-6 h-6 rounded-full bg-[#040814] border border-[#ffffff10] text-gray-500 hover:text-white flex items-center justify-center text-[10px] transition-colors" title="بستن" aria-label="Close resume FAB">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
     </div>
 
     <!-- Custom Script -->
